@@ -297,6 +297,9 @@ footer {
 }
 
 @media(min-width:1px)and (max-width:800px) {
+    footer{
+        visibility: hidden;
+    }
     .registration-box {
         margin-left: 2%;
         margin-right: 2%;
