@@ -211,12 +211,13 @@ footer {
     width: 78px;
     margin: 1px 1px 1px 1px;
     height: 78px;
-    background: rgb(126, 0, 0);
+    background: #a32e5f;
 }
 .fieldElement3{
     width: 78px;
     margin: 1px 1px 1px 1px;
     height: 78px;
+    background: #00ADB5;
 }
 .mineblock{
     padding-top: 20vh;
