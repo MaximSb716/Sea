@@ -17,10 +17,14 @@
 <body>
     <div class="registration-box">
         <h1>Регистрация</h1>
-        <input class="nickname" id="nickname" placeholder=" Никнейм">
-        <input class="login" id="login" placeholder=" Логин" type="email">
-        <input class="password" id="password" placeholder=" Пароль" type="password">
-        <input class="password" id="passwordcheck" placeholder=" Подтверждение пароля" type="password">
+        <label for="nickname">Никнейм</label>
+        <input class="nickname" id="nickname">
+        <label for="login">Логин</label>
+        <input class="login" id="login"  type="email">
+        <label for="password">Пароль</label>
+        <input class="password" id="password"  type="password">
+        <label for="password">Повторите пароль</label>
+        <input class="password" id="passwordcheck"  type="password">
         <button class="registration-button" id="registrationButton">Зарегестрироваться</button>
     </div>
     <script src="handlebars-v4.1.2.js"></script>
