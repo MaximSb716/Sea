@@ -7,10 +7,6 @@ html {
     min-width: 470px;
 }
 
-
-
-
-
 body {
     background-image: linear-gradient(135deg, #007cef, #005cad, #002d52, #000000);
     background-attachment: fixed;
@@ -23,7 +19,6 @@ body {
     min-width: 470px;
 }
 
-
 .registration-box *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
@@ -31,6 +26,7 @@ body {
     outline: none;
     border: none;
 }
+
 .registration-box h3{
     font-size: 32px;
     font-weight: 500;
@@ -75,10 +71,11 @@ label{
     font-weight: 300;
     color: #ffffff;
 }
+
 .input{
     color: #ffffff;
 }
-/**/
+
 header {
     margin: auto;
     left: 0;
@@ -87,11 +84,10 @@ header {
     top: 0;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     z-index: 100;
     color: #C5C5C5;
-
+    background-image: linear-gradient(135deg, #004a8f, #003c70, #001525, #000000);
 
 }
 
@@ -113,22 +109,23 @@ a {
     width: 100px;
 }
 
-    a:hover {
-        color: rgb(151, 151, 151);
-    }
+a:hover {
+    color: rgb(151, 151, 151);
+}
 
 .swap-button{
     margin-top: 50px;
     margin-bottom: -30px;
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
+    background-color: rgba(255, 255, 255, 0.219);
+    color: #ffffff;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .registration-button {
         margin-top: 50px;
         width: 100%;
@@ -139,6 +136,12 @@ a {
         font-weight: 600;
         border-radius: 5px;
         cursor: pointer;
+        transition: color 0.4s, transform 0.4s, background-color 0.4s
+}
+.registration-button:hover{
+    background-color: #080710;
+    color: #ffffff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 footer {
@@ -154,17 +157,59 @@ footer {
     height: auto;
     width: auto;
     cursor: pointer;
-    color: #C5C5C5;
-    background-color: #454e59;
+    background-color: #ffffffb2;
+    color: #080710;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s, transform 0.4s, background-color 0.4s
+}
+.exitButton:hover {
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    background-color: #080710af;
+    color: #ffffffb2;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.CreateField {
+
+.CreateField2 {
     width: auto;
     padding: 5px;
     cursor: pointer;
     position: relative;
     color: #C5C5C5;
-    background-color: #222831;
+    background-color: rgba(255, 255, 255, 0);
+}
+.CreateField{
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffffb2;
+    color: #080710;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s, transform 0.4s, background-color 0.4s
+}
+.CreateField:hover{
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: #080710af;
+    color: #ffffffb2;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .fieldsUl {
@@ -180,10 +225,11 @@ footer {
     border-radius: 3px;
     width: 97%;
     padding: 30px;
-    border: 1px solid grey;
+    border: 1px solid rgb(0, 0, 0);
     margin-top: 5px;
-    color: #C5C5C5;
-    background-color: #454e59;
+    background-color: rgba(255, 255, 255, 0.219);
+    color: #000000;
+    cursor: pointer;
 }
 
 .div1 {
@@ -222,9 +268,36 @@ footer {
     width: auto;
     height: 30%;
     cursor: pointer;
-    color: #C5C5C5;
-    background-color: #454e59;
+    background-color: #ffffffb2;
+    color: #080710;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s, transform 0.4s, background-color 0.4s
 }
+
+.exitGameButton:hover {
+    background-color: #080710af;
+    color: #ffffffb2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .createFieldAdmin {
     display: flex;
@@ -244,7 +317,7 @@ footer {
     margin: 5%;
     margin-top: 150px;
     padding: 20px;
-    background-color: #454e59;
+    background-color: #00000080;
     color: #C5C5C5;
 }
 
@@ -260,12 +333,179 @@ footer {
 
 .startGameButton {
     font-size: 180%;
-    margin-top: 20%;
-    margin-left: 40%;
+    margin-top: 50vh;
+    margin-left: 50%;
+    margin-right: 50%;
     padding: 5% 10% 5% 10%;
     color: #C5C5C5;
-    background-color: #454e59;
+    background-color: rgba(255,255,255,0.13);
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(93, 81, 184, 0.6);
+    border: 2px solid rgba(255,255,255,0.1);
 }
+.startGameButton:hover {
+    font-size: 180%;
+    margin-top: 50vh;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 5% 10% 5% 10%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.13);
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(120, 105, 233, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.bubble-holder{
+    z-index: -100;
+    width:100%;
+    height: 130vh;
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .bubble-1 {
+    left: 8%;
+    animation-delay: 1s;
+  }
+  .bubble-1 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 0s;
+  }
+  
+  .bubble-2 {
+    left: 40%;
+    animation-delay: 2s;
+  }
+  .bubble-2 .bubble-animation-y{
+    animation-duration: 6s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-3 {
+    right: 15%;
+    animation-delay: 1s;
+  }
+  .bubble-3 .bubble-animation-y{
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+  }
+  
+  .bubble-4 {
+    left: 8%; 
+    animation-delay: 2s;
+  }
+  .bubble-4 .bubble-animation-y{
+    animation-duration: 6s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-5 {
+    left: 40%; 
+    animation-delay: 1s;
+  }
+  .bubble-5 .bubble-animation-y{
+    animation-duration: 5s;
+    animation-delay: 0;
+  }
+  
+  .bubble-6 {
+    left: 45%;
+    animation-delay: 2s;
+  }
+  .bubble-6 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 3.5s;
+  }
+  
+  .bubble-7 {
+    right: 15%;
+    animation-delay: 1s;
+  }
+  .bubble-7 .bubble-animation-y{
+    animation-duration: 5.5s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-8 {
+    right: 5%;
+    animation-delay: 2s;
+  }
+  .bubble-8 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 3s;
+  }
+
+  
+  .bubble-container{
+    position: absolute;
+    z-index: -1000;
+    bottom: -250px; 
+  }
+  
+  .bubble-large, .bubble-small {
+    border-radius: 100%;  
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 
+    inset 0px 10px 30px 5px rgba(96, 147, 195, 1);
+  }
+  
+  .bubble-large {
+    width: 231px;
+    height: 231px;
+  }
+  
+  .bubble-small {
+    width: 82px;
+    height: 82px;
+  }
+  
+  .bubble-animation-x { 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleXAnimFrames;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+  }
+  
+  .bubble-animation-y { 
+    animation-iteration-count: infinite;
+    animation-name: bubbleYAnimFrames;
+    animation-timing-function: linear;
+  }
+  
+  
+   @keyframes bubbleXAnimFrames {
+    0% {
+      transform: translateX(0);
+     }
+    100% {
+      transform: translateX(50px);
+     }
+  }
+  
+   @keyframes bubbleYAnimFrames {
+    0% {
+      transform: translateY(0);
+     }
+    50% {
+      opacity: 85%;
+     }
+    100% {
+      transform: translateY(-1250px);
+      opacity: 0;
+     }
+  }
+
+
+
+
 
 .fieldText {
     padding-top: 15vh;
